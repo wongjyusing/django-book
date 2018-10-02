@@ -1,0 +1,462 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>模板语句 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="section6.html" />
+    
+    
+    <link rel="prev" href="section4.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1/">
+            
+                <a href="../chapter1/">
+            
+                    
+                    准备工作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter1/section1.html">
+            
+                <a href="../chapter1/section1.html">
+            
+                    
+                    虚拟环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter1/section2.html">
+            
+                <a href="../chapter1/section2.html">
+            
+                    
+                    创建第一个Django项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter1/section2.html">
+            
+                <a href="../chapter1/section2.html">
+            
+                    
+                    必要的配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    最简单的博客
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="section1.html">
+            
+                <a href="section1.html">
+            
+                    
+                    模板文件models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="section2.html">
+            
+                <a href="section2.html">
+            
+                    
+                    视图文件views
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="section3.html">
+            
+                <a href="section3.html">
+            
+                    
+                    路由文件urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="section4.html">
+            
+                <a href="section4.html">
+            
+                    
+                    后台管理admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.5" data-path="section5.html">
+            
+                <a href="section5.html">
+            
+                    
+                    模板语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="section6.html">
+            
+                <a href="section6.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >模板语句</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="django&#x6A21;&#x677F;&#x8BED;&#x53E5;">Django&#x6A21;&#x677F;&#x8BED;&#x53E5;</h2>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x8981;&#x5B66;&#x65B0;&#x7684;&#x8BED;&#x6CD5;&#xFF0C;jinjia2&#x8BED;&#x6CD5;&#x3002;<br>&#x5148;&#x5B66;&#x4E09;&#x53E5;&#x5427;&#x3002;  </p>
+<pre><code class="lang-html">{{ xxxx.oooo }}   {# &#x53D8;&#x91CF;&#x8BED;&#x53E5; #}
+
+{% for xxxx in xxxxs %}    {# &#x5F00;&#x5934;&#x9664;&#x4E86;&#x7528;for &#x8FD8;&#x53EF;&#x4EE5;&#x7528;if &#x7B49;&#x63A7;&#x5236;&#x8BED;&#x53E5; #}
+    {{ xxxx }}                  {# &#x8FD9;&#x91CC;&#x662F;&#x4F7F;&#x7528;&#x53D8;&#x91CF;&#x8BED;&#x53E5; #}  
+{% endfor %}               {# &#x5982;&#x679C;&#x5F00;&#x5934;&#x7528;&#x4E86;if &#x7ED3;&#x5C3E;&#x8981;&#x6539;&#x6210;endif #}
+                           {# &#x5927;&#x591A;&#x6570;&#x63A7;&#x5236;&#x8BED;&#x53E5;&#x90FD;&#x9700;&#x8981;end&#x548C;&#x8BED;&#x53E5;&#x5F62;&#x5F0F;&#x7ED3;&#x5C3E; #}
+                           {# &#x4E5F;&#x6709;&#x4F8B;&#x5916;&#xFF0C;&#x4F8B;&#x5982;url&#xFF0C;&#x8FD8;&#x6709;&#x4E9B;&#x8BED;&#x53E5;&#x7B49;&#x5230;&#x540E;&#x9762;&#x5728;&#x8FDB;&#x884C;&#x8BB2;&#x89E3; #}
+
+{# &#x6211;&#x5C31;&#x4E0D;&#x96BE;&#x731C;&#x4E86;&#x5427;&#xFF0C;&#x6211;&#x662F;&#x6CE8;&#x91CA; #}
+</code></pre>
+<h2 id="&#x8FD0;&#x884C;&#x9879;&#x76EE;">&#x8FD0;&#x884C;&#x9879;&#x76EE;</h2>
+<p>&#x5176;&#x5B9E;&#x8BB2;&#x4E86;&#x90A3;&#x4E48;&#x4E45;&#xFF0C;&#x4E0D;&#x628A;&#x9879;&#x76EE;&#x8FD0;&#x884C;&#x8D77;&#x6765;&#xFF0C;&#x597D;&#x50CF;&#x6709;&#x70B9;&#x8BF4;&#x4E0D;&#x8FC7;&#x53BB;&#x5427;&#x3002;<br>&#x76F8;&#x4FE1;&#x5927;&#x5BB6;&#x4E5F;&#x770B;&#x7740;&#x70E6;&#x4E86;&#x3002;<br>&#x5148;&#x8FD0;&#x884C;&#x9879;&#x76EE;&#x5427;&#x3002;<br>&#x5728;&#x8FD0;&#x884C;&#x9879;&#x76EE;&#x524D;&#xFF0C;&#x505A;&#x4E00;&#x4E9B;&#x5FC5;&#x8981;&#x64CD;&#x4F5C;&#x3002;<br>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x5BFC;&#x5165;&#x6211;&#x4EEC;&#x7684;blog&#x5E94;&#x7528;&#x3002;<br>&#x6253;&#x5F00;settings.py&#x3002;<br>&#x627E;&#x5230;INSTALLED_APPS&#xFF0C;&#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code class="lang-python">INSTALLED_APPS = [
+    <span class="hljs-string">&apos;django.contrib.admin&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.auth&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.contenttypes&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.sessions&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.messages&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.staticfiles&apos;</span>,
+
+    <span class="hljs-string">&apos;blog&apos;</span>,
+]
+</code></pre>
+<h3 id="&#x521B;&#x5EFA;&#x6A21;&#x677F;&#x6587;&#x4EF6;">&#x521B;&#x5EFA;&#x6A21;&#x677F;&#x6587;&#x4EF6;</h3>
+<p>&#x5728;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x7EC8;&#x7AEF;&#x4F9D;&#x6B21;&#x8F93;&#x5165;&#x4EE5;&#x4E0B;&#x7684;&#x547D;&#x4EE4;<br><code>touch templates/blog_list.html</code><br><code>touch templates/blog_detail.html</code>  </p>
+<h3 id="&#x751F;&#x6210;&#x6570;&#x636E;&#x5E93;&#x8FC1;&#x79FB;&#x6587;&#x4EF6;&#x3002;">&#x751F;&#x6210;&#x6570;&#x636E;&#x5E93;&#x8FC1;&#x79FB;&#x6587;&#x4EF6;&#x3002;</h3>
+<p><code>python manage.py makemigrations</code>  </p>
+<h3 id="&#x8FC1;&#x79FB;-&#x8FC1;&#x79FB;&#x6570;&#x636E;&#x5E93;&#x6587;&#x4EF6;">&#x8FC1;&#x79FB; &#x8FC1;&#x79FB;&#x6570;&#x636E;&#x5E93;&#x6587;&#x4EF6;</h3>
+<p><code>python manage.py migrate</code>  </p>
+<h3 id="&#x521B;&#x5EFA;&#x8D85;&#x7EA7;&#x7BA1;&#x7406;&#x5458;">&#x521B;&#x5EFA;&#x8D85;&#x7EA7;&#x7BA1;&#x7406;&#x5458;</h3>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x8BB0;&#x4F4F;&#x5E10;&#x53F7;&#x548C;&#x5BC6;&#x7801;&#xFF0C;&#x5373;&#x5C06;&#x7528;&#x5230;<br><code>python manage.py createsuperuser</code>  </p>
+<h3 id="&#x542F;&#x52A8;&#x9879;&#x76EE;">&#x542F;&#x52A8;&#x9879;&#x76EE;</h3>
+<p>&#x8BF7;&#x8BB0;&#x4F4F;&#x4E0B;&#x9762;&#x7684;&#x8FD9;&#x6761;&#x547D;&#x4EE4;<br>&#x4EE5;&#x540E;&#x7ECF;&#x5E38;&#x7528;&#x5230;&#x3002;<br><code>python manage.py runserver</code><br>&#x597D;&#x4E86;&#xFF0C;&#x9879;&#x76EE;&#x542F;&#x52A8;&#x4E86;&#x3002;&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x6253;&#x5F00;<a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a>&#x3002;<br>&#x6709;&#x6CA1;&#x6709;&#x53D1;&#x73B0;&#x4E00;&#x7247;&#x7A7A;&#x767D;&#x554A;&#xFF1F;&#xFF1F;<br>&#x8FD9;&#x4E2A;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x8FD8;&#x6CA1;&#x6709;&#x586B;&#x5199;&#x5185;&#x5BB9;&#x5230;&#x540E;&#x53F0;&#x3002;<br>&#x6253;&#x5F00;<a href="http://127.0.0.1:8000/admin/" target="_blank">http://127.0.0.1:8000/admin/</a>,&#x7528;&#x4F60;&#x521A;&#x624D;&#x8BBE;&#x5B9A;&#x7684;&#x5E10;&#x53F7;&#x5BC6;&#x7801;&#x767B;&#x5F55;&#x3002;<br>&#x7136;&#x540E;&#x5199;&#x4E00;&#x7BC7;&#x535A;&#x6587;&#x3002;&#x4E0D;&#x4F1A;markdown&#x8BED;&#x6CD5;&#x7684;&#x53EF;&#x4EE5;&#x590D;&#x5236;&#x4E0B;&#x9762;&#x7684;markdown&#x5185;&#x5BB9;&#x3002;  </p>
+<pre><code class="lang-markdown"><span class="hljs-section"># &#x9F99;&#x867E;&#x4F0A;&#x9762;&#x771F;&#x597D;&#x5403;</span>
+<span class="hljs-section">## &#x9F99;&#x867E;&#x4F0A;&#x9762;&#x771F;&#x597D;&#x5403;</span>
+<span class="hljs-section">### &#x9F99;&#x867E;&#x4F0A;&#x9762;&#x771F;&#x597D;&#x5403;</span>
+<span class="hljs-section">#### &#x9F99;&#x867E;&#x4F0A;&#x9762;&#x771F;&#x597D;&#x5403;</span>
+<span class="hljs-section">##### &#x9F99;&#x867E;&#x4F0A;&#x9762;&#x771F;&#x597D;&#x5403;</span>
+<span class="hljs-section">###### &#x9F99;&#x867E;&#x4F0A;&#x9762;&#x771F;&#x597D;&#x5403;</span>
+[<span class="hljs-string">&#x6211;&#x662F;&#x8D85;&#x94FE;&#x63A5;</span>](<span class="hljs-link">http://127.0.0.1:8000</span>)
+</code></pre>
+<p>&#x7F51;&#x9875;&#x7684;&#x540E;&#x7F00;&#x586B;&#x5199;<code>111</code>&#x5427;&#xFF0C;&#x65B9;&#x4FBF;&#x6211;&#x540E;&#x9762;&#x7684;&#x8BB2;&#x89E3;&#x3002;<br>&#x5176;&#x5B9E;&#xFF0C;&#x73B0;&#x5728;<code>http://127.0.0.1:8000/</code>&#x4ECD;&#x7136;&#x4E3A;&#x7A7A;&#x3002;<br>&#x56E0;&#x4E3A;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x6A21;&#x677F;&#x9875;&#x9762;&#x8FD8;&#x6CA1;&#x6709;&#x5199;&#x3002;  </p>
+<h2 id="&#x6A21;&#x677F;&#x8BED;&#x53E5;&#x521D;&#x4F53;&#x9A8C;">&#x6A21;&#x677F;&#x8BED;&#x53E5;&#x521D;&#x4F53;&#x9A8C;</h2>
+<h3 id="&#x535A;&#x5BA2;&#x5217;&#x8868;">&#x535A;&#x5BA2;&#x5217;&#x8868;</h3>
+<p>&#x6253;&#x5F00;templates&#x76EE;&#x5F55;&#x4E0B;&#x7684;blog_list.html<br>&#x5199;&#x5165;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span> <span class="hljs-attr">dir</span>=<span class="hljs-string">&quot;ltr&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&#x535A;&#x5BA2;&#x5217;&#x8868;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        {% for blog in blogs %}
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;detail&apos; blog.slug %}&quot;</span>&gt;</span>{{ blog.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        {% endfor %}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h3 id="&#x6587;&#x7AE0;&#x8BE6;&#x60C5;&#x9875;">&#x6587;&#x7AE0;&#x8BE6;&#x60C5;&#x9875;</h3>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span> <span class="hljs-attr">dir</span>=<span class="hljs-string">&quot;ltr&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>{{ blog.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;blog_list&apos; %}&quot;</span>&gt;</span>&#x535A;&#x5BA2;&#x5217;&#x8868;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        {{ blog.body_markdown|safe }}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>&#x586B;&#x5199;&#x5B8C;&#x540E;&#xFF0C;&#x53EA;&#x8981;&#x4F60;&#x4EEC;&#x4E4B;&#x524D;&#x6CA1;&#x6709;&#x505C;&#x6B62;&#x9879;&#x76EE;&#x3002;<br>&#x6253;&#x5F00;<code>http://127.0.0.1:8000</code>&#x770B;&#x770B;&#x6548;&#x679C;&#x3002;<br>&#x5F88;<strong>&#x6837;&#x8870;</strong>&#x5BF9;&#x5427;&#xFF1F;&#xFF1F;<br>&#x6837;&#x8870;&#x662F;&#x6B63;&#x5E38;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x8FD8;&#x6CA1;&#x6709;&#x771F;&#x6B63;&#x4F7F;&#x7528;html&#x548C;css&#x3002;   </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="section4.html" class="navigation navigation-prev " aria-label="Previous page: 后台管理admin">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="section6.html" class="navigation navigation-next " aria-label="Next page: 总结">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"模板语句","level":"1.3.5","depth":2,"next":{"title":"总结","level":"1.3.6","depth":2,"path":"chapter2/section6.md","ref":"chapter2/section6.md","articles":[]},"previous":{"title":"后台管理admin","level":"1.3.4","depth":2,"path":"chapter2/section4.md","ref":"chapter2/section4.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter2/section5.md","mtime":"2018-10-02T04:37:12.534Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-02T04:33:43.430Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
