@@ -1,0 +1,22 @@
+{
+    "title": "Django搭建个人博客",
+    "description": "手把手教你使用Django2.0搭建个人博客",
+    "author": "wongyusing",
+    "language": "zh-hans",
+    "root": ".",
+
+    "plugins": [
+        "github-buttons@2.1.0"
+    ],
+
+    "pluginsConfig": {
+
+        "github-buttons": {
+            "repo": "wongjyusing/django-book",
+            "types": [
+                "star"
+            ],
+            "size": "small"
+        }
+    }
+}

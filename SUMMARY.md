@@ -12,3 +12,7 @@
   * [后台管理admin](chapter2/section4.md)
   * [模板语句](chapter2/section5.md)  
   * [总结](chapter2/section6.md)  
+* [模板语法进阶](chapter3/README.md)
+  * [模板拓展语法](chapter3/section1.md)
+  * [自定义模板标签（上）](chapter3/section2.md)
+  * [自定义模板标签（下）](chapter3/section3.md)

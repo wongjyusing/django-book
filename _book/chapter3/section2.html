@@ -1,0 +1,566 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>自定义模板标签（上） · Django搭建个人博客</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="wongyusing">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="section3.html" />
+    
+    
+    <link rel="prev" href="section1.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"wongjyusing/django-book","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1/">
+            
+                <a href="../chapter1/">
+            
+                    
+                    准备工作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter1/section1.html">
+            
+                <a href="../chapter1/section1.html">
+            
+                    
+                    虚拟环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter1/section2.html">
+            
+                <a href="../chapter1/section2.html">
+            
+                    
+                    创建第一个Django项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter1/section2.html">
+            
+                <a href="../chapter1/section2.html">
+            
+                    
+                    必要的配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter2/">
+            
+                <a href="../chapter2/">
+            
+                    
+                    最简单的博客
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter2/section1.html">
+            
+                <a href="../chapter2/section1.html">
+            
+                    
+                    模板文件models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter2/section2.html">
+            
+                <a href="../chapter2/section2.html">
+            
+                    
+                    视图文件views
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter2/section3.html">
+            
+                <a href="../chapter2/section3.html">
+            
+                    
+                    路由文件urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../chapter2/section4.html">
+            
+                <a href="../chapter2/section4.html">
+            
+                    
+                    后台管理admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../chapter2/section5.html">
+            
+                <a href="../chapter2/section5.html">
+            
+                    
+                    模板语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../chapter2/section6.html">
+            
+                <a href="../chapter2/section6.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    模板语法进阶
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="section1.html">
+            
+                <a href="section1.html">
+            
+                    
+                    模板拓展语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="section2.html">
+            
+                <a href="section2.html">
+            
+                    
+                    自定义模板标签（上）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="section3.html">
+            
+                <a href="section3.html">
+            
+                    
+                    自定义模板标签（下）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >自定义模板标签（上）</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x4EC0;&#x4E48;&#x662F;&#x81EA;&#x5B9A;&#x4E49;&#x6A21;&#x677F;&#x6807;&#x7B7E;&#xFF1F;">&#x4EC0;&#x4E48;&#x662F;&#x81EA;&#x5B9A;&#x4E49;&#x6A21;&#x677F;&#x6807;&#x7B7E;&#xFF1F;</h2>
+<p>&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x8F6C;&#x5316;&#x4E00;&#x4E0B;&#xFF0C;<strong>&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x6A21;&#x677F;&#x6807;&#x7B7E;</strong>&#xFF1F;<br>&#x672C;&#x6765;&#xFF0C;&#x8FD9;&#x4E2A;&#x5185;&#x5BB9;&#x8981;&#x653E;&#x5230;&#x540E;&#x9762;&#x6211;&#x4EEC;&#x7ED9;&#x535A;&#x6587;&#x589E;&#x52A0;&#x6807;&#x7B7E;&#x3001;&#x5206;&#x7C7B;&#x7684;&#x65F6;&#x5019;&#x518D;&#x8BB2;&#x7684;&#x3002;<br>&#x73B0;&#x5728;&#x63D0;&#x524D;&#x8BB2;&#x4E00;&#x4E0B;&#xFF0C;&#x5F53;&#x9884;&#x4E60;&#x5427;&#xFF0C;&#x770B;&#x4E0D;&#x61C2;&#x4E5F;&#x6CA1;&#x5173;&#x7CFB;&#x3002;&#x540E;&#x7EED;&#x7684;&#x5185;&#x5BB9;&#x8FD8;&#x4F1A;&#x8BB2;&#x89E3;&#x3002;  </p>
+<hr>
+<p>&#x7ED3;&#x5408;&#x73B0;&#x5728;&#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#x6765;&#x8BB2;&#xFF0C;&#x63D0;&#x4E00;&#x4E9B;&#x9700;&#x6C42;&#x5427;&#x3002;<br>&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x9875;&#x9762;&#x7684;<strong>&#x53F3;&#x534A;&#x90E8;&#x5206;</strong>&#xFF0C;&#x662F;&#x7A7A;&#x7684;&#xFF0C;&#x6CA1;&#x6709;&#x5185;&#x5BB9;&#x3002;<br>&#x73B0;&#x5728;&#x6211;&#x8981;&#x5728;&#x91CC;&#x9762;&#x653E;&#x7F6E;&#x6211;&#x7684;GitHub&#x3001;FaceBook&#x3001;&#x5FAE;&#x535A;&#x3001;qq&#x3001;&#x90AE;&#x7BB1;&#x7B49;&#x4FE1;&#x606F;&#x3002;<br>&#x4E0D;&#x77E5;&#x9053;&#xFF0C;&#x5927;&#x5BB6;&#x6709;&#x6CA1;&#x6709;&#x53D1;&#x73B0;&#xFF0C;&#x6211;&#x4EEC;&#x7684;blog_detail.html&#x6587;&#x4EF6;&#x7684;&#x53F3;&#x534A;&#x90E8;&#x5206;&#x662F;&#x548C;&#x5176;&#x4ED6;&#x9875;&#x9762;&#x6709;&#x6240;&#x533A;&#x522B;&#x7684;&#xFF1F;&#xFF1F;<br>blog_detail.html&#x7684;&#x53F3;&#x534A;&#x90E8;&#x5206;&#xFF0C;&#x4E0D;&#x80FD;&#x653E;&#x4E0A;&#x9762;&#x7684;&#x4FE1;&#x606F;&#x3002;<br>&#x600E;&#x4E48;&#x529E;&#x5462;&#xFF1F;&#xFF1F;<br>&#x5206;&#x522B;&#x5199;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;&#x653E;&#x5230;<strong>blog_list.html&#x548C;home.html</strong>&#x4E2D;&#xFF1F;&#xFF1F;<br>&#x6211;&#x60F3;&#x8BF4;&#x7684;&#x662F;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x3002;<br>&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;<strong>&#x5E94;&#x7528;</strong>&#xFF0C;&#x518D;&#x5229;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x6A21;&#x677F;&#x6807;&#x7B7E;&#x5373;&#x53EF;&#x3002;<br>&#x600E;&#x4E48;&#x7528;&#xFF1F;&#xFF1F;  </p>
+<h2 id="&#x65B0;&#x5E94;&#x7528;toolbox">&#x65B0;&#x5E94;&#x7528;toolbox</h2>
+<p>&#x628A;&#x9879;&#x76EE;&#x505C;&#x6B62;&#xFF0C;&#x5728;&#x7EC8;&#x7AEF;&#x8F93;&#x5165;&#xFF1A;<br><code>python manage.py startapp toolbox</code><br>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5C31;&#x591A;&#x4E86;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;toolbox&#x7684;&#x5E94;&#x7528;&#x3002;<br>&#x8FD9;&#x4E2A;&#x5E94;&#x7528;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x7528;&#x4E8E;&#x653E;&#x7F6E;&#x6211;&#x4EEC;<strong>&#x901A;&#x7528;&#x7684;&#x5185;&#x5BB9;</strong>&#x3002;<br>&#x50CF;&#x4E0A;&#x9762;&#x7684;&#x9700;&#x6C42;&#x4E00;&#x6837;&#x7684;&#x5185;&#x5BB9;&#x3002;<br>&#x600E;&#x4E48;&#x5199;&#x5462;&#xFF1F;&#xFF1F;  </p>
+<h3 id="modelspy">models.py</h3>
+<p>&#x6253;&#x5F00;toolbox&#x76EE;&#x5F55;&#x4E0B;&#x7684;models.py&#xFF0C;&#x5199;&#x5165;&#x4EE5;&#x4E0B;&#x7684;&#x5185;&#x5BB9;&#x3002;  </p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.db <span class="hljs-keyword">import</span> models
+
+<span class="hljs-comment"># &#x4E2A;&#x4EBA;&#x7A7A;&#x95F4;&#x5DE5;&#x5177;&#x94FE;&#x63A5;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToolLinks</span><span class="hljs-params">(models.Model)</span>:</span>
+    name = models.CharField(verbose_name=<span class="hljs-string">&quot;&#x94FE;&#x63A5;&#x6587;&#x672C;&quot;</span>,max_length=<span class="hljs-number">50</span>)
+    link = models.CharField(verbose_name=<span class="hljs-string">&quot;&#x94FE;&#x63A5;&quot;</span>,max_length=<span class="hljs-number">200</span>,help_text=<span class="hljs-string">&apos;&#x8BF7;&#x586B;&#x5199;http&#x6216;https&#x5F00;&#x5934;&#x7684;&#x5B8C;&#x6574;&#x5F62;&#x5F0F;&#x5730;&#x5740;&apos;</span>)
+    img_link = models.URLField(<span class="hljs-string">&apos;&#x56FE;&#x7247;&#x5730;&#x5740;&apos;</span>, help_text=<span class="hljs-string">&apos;&#x8BF7;&#x586B;&#x5199;http&#x6216;https&#x5F00;&#x5934;&#x7684;&#x5B8C;&#x6574;&#x5F62;&#x5F0F;&#x5730;&#x5740;&apos;</span>,blank=<span class="hljs-keyword">True</span>)
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Meta</span>:</span>
+        verbose_name = <span class="hljs-string">&apos;&#x4E2A;&#x4EBA;&#x7A7A;&#x95F4;&apos;</span>
+        verbose_name_plural = verbose_name
+        ordering = [<span class="hljs-string">&apos;-id&apos;</span>]
+
+    <span class="hljs-comment"># &#x4F7F;&#x5BF9;&#x8C61;&#x5728;&#x540E;&#x53F0;&#x663E;&#x793A;&#x66F4;&#x53CB;&#x5584;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> self.name
+<span class="hljs-comment"># &#x9996;&#x9875;&#x548C;&#x5173;&#x4E8E;&#x7684;&#x9875;&#x9762;&#x5185;&#x5BB9;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HomeAndAbout</span><span class="hljs-params">(models.Model)</span>:</span>
+    title = models.CharField(verbose_name=<span class="hljs-string">&apos;&#x6807;&#x9898;&apos;</span>,max_length=<span class="hljs-number">50</span>)
+    body = models.TextField(verbose_name=<span class="hljs-string">&apos;&#x6587;&#x7AE0;&apos;</span>)
+    author = models.CharField(verbose_name=<span class="hljs-string">&apos;&#x4F5C;&#x8005;&apos;</span>,default=<span class="hljs-string">&apos;sing&apos;</span>,max_length=<span class="hljs-number">50</span>)
+    created_time = models.DateTimeField(verbose_name=<span class="hljs-string">&apos;&#x521B;&#x5EFA;&#x65F6;&#x95F4;&apos;</span>,auto_now_add=<span class="hljs-keyword">True</span>)
+    update_time = models.DateTimeField(verbose_name=<span class="hljs-string">&apos;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&apos;</span>,auto_now=<span class="hljs-keyword">True</span>)
+
+
+
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Meta</span>:</span>
+        verbose_name = <span class="hljs-string">&apos;&#x9996;&#x9875;&#x548C;&#x5173;&#x4E8E;&#x7684;&#x9875;&#x9762;&#x5185;&#x5BB9;&apos;</span>
+        verbose_name_plural = verbose_name
+        ordering = [<span class="hljs-string">&apos;-created_time&apos;</span>]
+
+    <span class="hljs-comment"># &#x4F7F;&#x5BF9;&#x8C61;&#x5728;&#x540E;&#x53F0;&#x663E;&#x793A;&#x66F4;&#x53CB;&#x5584;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> self.title
+
+
+
+<span class="hljs-comment"># &#x7F51;&#x7AD9;&#x4FE1;&#x606F;&#x586B;&#x5199;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MySiteData</span><span class="hljs-params">(models.Model)</span>:</span>
+    site_logo = models.CharField(verbose_name=<span class="hljs-string">&quot;&#x7F51;&#x7AD9;logo&quot;</span>,max_length=<span class="hljs-number">50</span>)
+    introduction = models.TextField(verbose_name=<span class="hljs-string">&apos;&#x7F51;&#x7AD9;&#x7B80;&#x4ECB;&apos;</span>)
+    approval_number = models.CharField(max_length=<span class="hljs-number">64</span>,verbose_name=<span class="hljs-string">&apos;&#x7F51;&#x7AD9;&#x5BA1;&#x6279;&#x53F7;&apos;</span>,default=<span class="hljs-string">&apos;&#x6682;&#x65E0;&#x5BA1;&#x6279;&#x53F7;&apos;</span>)
+
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Meta</span>:</span>
+        verbose_name = <span class="hljs-string">&apos;&#x7F51;&#x7AD9;&#x4FE1;&#x606F;&apos;</span>
+        verbose_name_plural = verbose_name
+        ordering = [<span class="hljs-string">&apos;-id&apos;</span>]
+
+    <span class="hljs-comment"># &#x4F7F;&#x5BF9;&#x8C61;&#x5728;&#x540E;&#x53F0;&#x663E;&#x793A;&#x66F4;&#x53CB;&#x5584;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> self.site_logo
+</code></pre>
+<h3 id="adminpy">admin.py</h3>
+<p>&#x6CE8;&#x518C;&#x6211;&#x4EEC;&#x521A;&#x5199;&#x7684;&#x6A21;&#x578B;  </p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.contrib <span class="hljs-keyword">import</span> admin
+<span class="hljs-keyword">from</span> .models <span class="hljs-keyword">import</span> HomeAndAbout,MySiteData,ToolLinks
+<span class="hljs-comment"># Register your models here.</span>
+<span class="hljs-comment"># &#x88C5;&#x9970;&#x5668;&#x65B9;&#x6CD5; &#x6CE8;&#x518C; Blog&#x7C7B;&#x65B9;&#x6CD5;</span>
+<span class="hljs-meta">@admin.register(HomeAndAbout)</span>
+<span class="hljs-comment"># &#x751F;&#x6210;&#x4E00;&#x4E2A;&#x7C7B;&#xFF0C;&#x7EE7;&#x627F;admin &#x7684;&#x6A21;&#x578B;&#x540E;&#x53F0;&#x65B9;&#x6CD5;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HomeAndAboutAdmin</span><span class="hljs-params">(admin.ModelAdmin)</span>:</span>
+    <span class="hljs-comment"># &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5143;&#x7EC4;</span>
+    list_display = (<span class="hljs-string">&apos;title&apos;</span>, <span class="hljs-string">&apos;id&apos;</span>, <span class="hljs-string">&apos;author&apos;</span>, <span class="hljs-string">&apos;created_time&apos;</span>, <span class="hljs-string">&apos;update_time&apos;</span>)
+
+
+
+<span class="hljs-meta">@admin.register(MySiteData)</span>
+<span class="hljs-comment"># &#x751F;&#x6210;&#x4E00;&#x4E2A;&#x7C7B;&#xFF0C;&#x7EE7;&#x627F;admin &#x7684;&#x6A21;&#x578B;&#x540E;&#x53F0;&#x65B9;&#x6CD5;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MySiteDataAdmin</span><span class="hljs-params">(admin.ModelAdmin)</span>:</span>
+    <span class="hljs-comment"># &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5143;&#x7EC4;</span>
+    list_display = (<span class="hljs-string">&apos;site_logo&apos;</span>, <span class="hljs-string">&apos;introduction&apos;</span>)
+
+
+<span class="hljs-meta">@admin.register(ToolLinks)</span>
+<span class="hljs-comment"># &#x751F;&#x6210;&#x4E00;&#x4E2A;&#x7C7B;&#xFF0C;&#x7EE7;&#x627F;admin &#x7684;&#x6A21;&#x578B;&#x540E;&#x53F0;&#x65B9;&#x6CD5;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToolLinksAdmin</span><span class="hljs-params">(admin.ModelAdmin)</span>:</span>
+    <span class="hljs-comment"># &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5143;&#x7EC4;</span>
+    list_display = (<span class="hljs-string">&apos;name&apos;</span>, <span class="hljs-string">&apos;link&apos;</span>)
+</code></pre>
+<h3 id="settingspy">settings.py</h3>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x6DFB;&#x52A0;&#x6211;&#x4EEC;&#x7684;toolbox</p>
+<pre><code class="lang-python">INSTALLED_APPS = [
+    <span class="hljs-string">&apos;django.contrib.admin&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.auth&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.contenttypes&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.sessions&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.messages&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.staticfiles&apos;</span>,
+
+    <span class="hljs-string">&apos;blog&apos;</span>,
+    <span class="hljs-string">&apos;toolbox&apos;</span>,
+]
+</code></pre>
+<p>&#x4F9D;&#x6B21;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code class="lang-bash">python manage.py makemigrations
+
+python manage.py migrate
+
+python manage.py runserver
+</code></pre>
+<p>&#x8FD0;&#x884C;&#x9879;&#x76EE;&#x540E;&#xFF0C;&#x5728;&#x540E;&#x53F0;&#x586B;&#x5199;&#x4E00;&#x4E9B;&#x5185;&#x5BB9;&#x3002;<br>&#x4E0B;&#x4E00;&#x5C0F;&#x8282;&#xFF0C;&#x5C06;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x7F16;&#x5199;&#x81EA;&#x5B9A;&#x4E49;&#x6A21;&#x677F;&#x6807;&#x7B7E;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="section1.html" class="navigation navigation-prev " aria-label="Previous page: 模板拓展语法">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="section3.html" class="navigation navigation-next " aria-label="Next page: 自定义模板标签（下）">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"自定义模板标签（上）","level":"1.4.2","depth":2,"next":{"title":"自定义模板标签（下）","level":"1.4.3","depth":2,"path":"chapter3/section3.md","ref":"chapter3/section3.md","articles":[]},"previous":{"title":"模板拓展语法","level":"1.4.1","depth":2,"path":"chapter3/section1.md","ref":"chapter3/section1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github-buttons@2.1.0"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github-buttons":{"repo":"wongjyusing/django-book","types":["star"],"size":"small"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"wongyusing","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Django搭建个人博客","language":"zh-hans","gitbook":"*","description":"手把手教你使用Django2.0搭建个人博客"},"file":{"path":"chapter3/section2.md","mtime":"2018-10-04T15:30:41.332Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-05T04:56:12.976Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
